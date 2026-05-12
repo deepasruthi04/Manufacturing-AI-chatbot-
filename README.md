@@ -71,27 +71,6 @@ Detect operational bottlenecks
 Suggest corrective actions
 Interpret manufacturing metrics
 
-🏗️ **System Architecture**
-User Question
-      ↓
-Intent Router
-      ↓
- ┌───────────────────────┐
- │ RAG Pipeline          │
- │ Company Manuals/PDFs  │
- └───────────────────────┘
-             OR
- ┌───────────────────────┐
- │ MongoDB Machine Data  │
- │ OEE + Downtime Data   │
- └───────────────────────┘
-      ↓
-Prompt Engineering Layer
-      ↓
-Large Language Model
-      ↓
-AI-generated Insights
-
 ⚙️ **Tech Stack**
 Frontend
 Streamlit
@@ -110,30 +89,7 @@ OEE Analytics
 Downtime Analysis
 Industry 4.0
 Industrial Automation
-📂 Project Structure
-AI-Manufacturing-Copilot/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-│
-├── data/
-│   ├── manuals/
-│   ├── company_docs/
-│
-├── rag/
-│   ├── embeddings.py
-│   ├── retriever.py
-│   ├── vector_store.py
-│
-├── analytics/
-│   ├── oee_analysis.py
-│   ├── downtime_analysis.py
-│
-├── database/
-│   ├── mongodb_connection.py
-│
-└── screenshots/
+
 📊 MongoDB Manufacturing Data Model
 
 The analytics system follows a real manufacturing hierarchy:
